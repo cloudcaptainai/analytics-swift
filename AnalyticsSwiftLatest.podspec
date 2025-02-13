@@ -7,11 +7,11 @@ Pod::Spec.new do |s|
     s.author                 = { 'Anish Doshi' => 'founders@tryhelium.com' }
     s.swift_version          = '5.5'
     s.ios.deployment_target  = '13.0'
-    s.tvos.deployment_target = '13.0'
   
     s.source                 = { :git => "https://github.com/cloudcaptainai/analytics-swift", :tag => "#{s.version}" }
     s.source_files           = "Sources/Segment/**/*.swift"
+    s.module_name            = 'Segment'
   
     s.dependency 'Sovran'
-    s.dependency 'JSONSafeEncodingLatest'
+    s.dependency 'JSONSafeEncoding'
   end
